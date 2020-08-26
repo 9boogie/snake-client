@@ -13,12 +13,12 @@ const connect = function() {
     conn.write('Name: JAE');
   })
   
-  conn.on('connect', () => {
-    setInterval(() => {
-      conn.write("Move: left")
-    }, 100);
-  })
-  
+  // conn.on('connect', () => {
+  //   setInterval(() => {
+  //     conn.write("Move: left")
+  //   }, 100);
+  // })
+ 
   conn.on('data', (data) => {
     console.log(`server says: ${data}`)
   });
